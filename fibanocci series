@@ -1,0 +1,42 @@
+def fibanocci(n):
+    if n<=1:
+        return n
+    else:
+        return fibanocci(n-1)+fibanocci(n-2)
+num_terms=int(input("enter the range "))
+
+print("fs")
+for i in range(num_terms):
+ print(fibanocci(i))
+(or)
+def fibanocci(n):
+    if n<=1:
+        return n
+    else:
+        return fibanocci(n-1)+fibanocci(n-2)
+num_terms=int(input("enter the range "))
+even_sum=0
+print("fs")
+for i in range(num_terms):
+    fib=fibanocci(i)
+    if fib%2==0:
+      print(fib)
+    even_sum+=fib
+print("sum of even series",even_sum)
+      (or)
+def fibanocci(n):
+    if n<=1:
+        return n
+    else:
+        return fibanocci(n-1)+fibanocci(n-2)
+num_terms=int(input("enter the range "))
+even_sum=0
+print("fs")
+for i in range(num_terms):
+    fib=fibanocci(i)
+    if fib%2==0:
+      print(fib)
+    even_sum+=fib
+print("sum of even series",even_sum)
+
+
