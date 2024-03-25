@@ -1,0 +1,16 @@
+def voting(age):
+    if age >= 18:
+        return "You are eligible to vote."
+    else:
+        years_left = 18 - age
+        return f"You are not eligible to vote. You are allowed to vote after {years_left} years."
+
+def main():
+    try:
+        age = int(input("Enter your age: "))
+        print(voting(age))
+    except ValueError:
+        print("Invalid input")
+
+if __name__ == "__main__":
+    main()
